@@ -132,6 +132,10 @@ export const workers: Worker[] = [
     subscription: 'api-cdc',
     args: { enableMessageOrdering: true },
   },
+  {
+    topic: 'post-image-processed',
+    subscription: 'new-processed-post',
+  },
   ...crons.map(
     (cron): Worker => ({
       topic: cron.topic || cron.name,

@@ -20,6 +20,7 @@
     "lint": "eslint . --ext .js,.ts --max-warnings 0",
     "start": "node index.js | pino-stackdriver",
     "pretest": "npm run lint && cross-env NODE_ENV=test npm run db:migrate:reset",
+    "pubsub:seed": "ts-node bin/newPostsToPubSub.ts",
     "test": "jest --testEnvironment=node --runInBand",
     "typeorm": "ts-node ./node_modules/typeorm/cli.js"
   },

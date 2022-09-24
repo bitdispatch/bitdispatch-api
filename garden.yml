@@ -49,6 +49,13 @@ tasks:
       <<: *env
     dependencies:
       - api-migrate
+  - name: api-pubsub-seed
+    args: "${var.dev ? [ 'npm', 'run', 'pubsub:seed' ] : ['node', './bin/newPostsToPubSub.js']}"
+    disabled: ${environment.name != "PROD"}
+    env:
+      <<: *env
+    dependencies:
+      - api-pubsub-init
 services:
   - name: api
     devMode: &devMode

@@ -1,3 +1,5 @@
+#!/usr/bin/env ts-node
+
 import { readFileSync } from 'fs';
 import { Connection } from 'typeorm';
 import { createOrGetConnection } from '../src/db';
