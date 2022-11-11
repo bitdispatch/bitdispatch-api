@@ -66,7 +66,7 @@
     "mercurius": "^8.12.2",
     "mercurius-cache": "^0.11.0",
     "mercurius-upload": "^4.0.0",
-    "node-fetch": "^2.6.7",
+    "node-fetch": "^3.3.0",
     "pg": "^8.7.1",
     "pg-query-stream": "^4.2.1",
     "pino": "^8.3.0",
