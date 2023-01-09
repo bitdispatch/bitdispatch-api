@@ -63,7 +63,7 @@
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
     "markdown-it": "^13.0.1",
-    "mercurius": "^8.12.2",
+    "mercurius": "^11.5.0",
     "mercurius-cache": "^0.11.0",
     "mercurius-upload": "^4.0.0",
     "node-fetch": "^2.6.7",
